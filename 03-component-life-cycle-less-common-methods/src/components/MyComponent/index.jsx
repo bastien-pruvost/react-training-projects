@@ -1,7 +1,7 @@
-import { Component } from 'react';
+import { PureComponent } from 'react';
 import styles from './style.module.css';
 
-class MyComponent extends Component {
+class MyComponent extends PureComponent {
   constructor(props) {
     super(props);
 
@@ -20,10 +20,20 @@ class MyComponent extends Component {
     return null;
   }
 
-  shouldComponentUpdate(nextProps, nextState) {
-    console.log('shouldComponentUpdate');
-    return true;
-  }
+  changeStateToBatman = () => {
+    this.setState({
+      name: 'BatMan'
+    });
+  };
+
+  // shouldComponentUpdate(nextProps, nextState) {
+  //   console.log('shouldComponentUpdate');
+
+  //   if (this.state.name !== nextState.name || this.props.age !== nextProps.age)
+  //     return true;
+
+  //   return false;
+  // }
 
   toggleForceUpdate = () => {
     console.log('Force Update');
@@ -41,6 +51,12 @@ class MyComponent extends Component {
         <p>
           <strong>Age: </strong>
           {this.props.age}
+        </p>
+        <button onClick={this.changeStateToBatman}>
+          Change State To Batman
+        </button>
+        <p>
+          <br />
         </p>
         <button onClick={this.toggleForceUpdate}>Force Update</button>
       </div>
