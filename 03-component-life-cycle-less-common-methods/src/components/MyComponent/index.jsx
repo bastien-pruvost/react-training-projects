@@ -1,7 +1,7 @@
-import { PureComponent } from 'react';
+import { Component } from 'react';
 import styles from './style.module.css';
 
-class MyComponent extends PureComponent {
+class MyComponent extends Component {
   constructor(props) {
     super(props);
 
@@ -26,14 +26,14 @@ class MyComponent extends PureComponent {
     });
   };
 
-  // shouldComponentUpdate(nextProps, nextState) {
-  //   console.log('shouldComponentUpdate');
+  shouldComponentUpdate(nextProps, nextState) {
+    console.log('shouldComponentUpdate');
 
-  //   if (this.state.name !== nextState.name || this.props.age !== nextProps.age)
-  //     return true;
+    if (this.state.name !== nextState.name || this.props.age !== nextProps.age)
+      return true;
 
-  //   return false;
-  // }
+    return false;
+  }
 
   toggleForceUpdate = () => {
     console.log('Force Update');
