@@ -4,7 +4,7 @@ import styles from './style.module.css';
 class Modal extends Component {
   render() {
     return (
-      <div className={styles.Modal}>
+      <div className={styles.Modal} onClick={this.props.handleModal}>
         <div>
           <p>
             Hello World from Modal <br />
