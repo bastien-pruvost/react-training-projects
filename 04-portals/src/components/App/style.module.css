@@ -1,5 +1,5 @@
 .App {
-  /* min-height: 100vh; */
-  text-align: center;
-  background-color: var(--greyLight);
+  height: 400px;
+  width: 400px;
+  background: lightgrey;
 }

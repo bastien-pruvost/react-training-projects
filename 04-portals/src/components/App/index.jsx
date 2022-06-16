@@ -1,23 +1,18 @@
 import { Component } from 'react';
 import styles from './style.module.css';
-import MyComponent from 'components/MyComponent';
+import Modal from 'components/Modal';
 
 class App extends Component {
   state = {
     age: 27
   };
 
-  addOneYear = () => {
-    this.setState((prevState) => ({
-      age: prevState.age + 1
-    }));
-  };
-
   render() {
     return (
       <div className={styles.App}>
-        <p>Je suis dans root</p>
-        <MyComponent />
+        <p>Je suis dans App</p>
+        <button>Afficher la modal</button>
+        <Modal />
       </div>
     );
   }

@@ -1,0 +1,20 @@
+.Modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00000080;
+}
+
+.Modal > div {
+  width: 60%;
+  background-color: white;
+  padding: 2rem;
+  min-height: 200px;
+  border-radius: 1rem;
+  text-align: center;
+}
