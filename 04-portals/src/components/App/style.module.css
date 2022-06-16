@@ -1,4 +1,5 @@
 .App {
+  position: relative;
   height: 400px;
   width: 400px;
   background: lightgrey;

@@ -1,9 +1,10 @@
 import { Component } from 'react';
+import ReactDOM from 'react-dom';
 import styles from './style.module.css';
 
 class Modal extends Component {
   render() {
-    return (
+    return ReactDOM.createPortal(
       <div className={styles.Modal} onClick={this.props.handleModal}>
         <div>
           <p>
@@ -14,7 +15,8 @@ class Modal extends Component {
           </p>
           <button>Fermer</button>
         </div>
-      </div>
+      </div>,
+      document.getElementById('modal-root')
     );
   }
 }
