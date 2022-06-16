@@ -3,6 +3,17 @@ import ReactDOM from 'react-dom';
 import styles from './style.module.css';
 
 class Modal extends Component {
+  constructor(props) {
+    super(props);
+
+    this.popupContainer = document.createElement('div');
+    document.body.appendChild(this.popupContainer);
+  }
+
+  componentWillUnmount() {
+    document.body.removeChild(this.popupContainer);
+  }
+
   render() {
     return ReactDOM.createPortal(
       <div className={styles.Modal} onClick={this.props.handleModal}>
@@ -16,7 +27,7 @@ class Modal extends Component {
           <button>Fermer</button>
         </div>
       </div>,
-      document.getElementById('modal-root')
+      this.popupContainer
     );
   }
 }
