@@ -16,7 +16,7 @@ class App extends Component {
   render() {
     return (
       <div className={styles.App}>
-        <p>Test</p>
+        <p>Je suis dans root</p>
         <MyComponent />
       </div>
     );

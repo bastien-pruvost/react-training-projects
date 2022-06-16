@@ -1,8 +1,11 @@
+import ReactDOM from 'react-dom';
+
 function MyComponent() {
-  return (
+  return ReactDOM.createPortal(
     <div>
-      <p>Je suis dans root</p>
-    </div>
+      <p>Je suis dans modal-root</p>
+    </div>,
+    document.getElementById('modal-root')
   );
 }
 

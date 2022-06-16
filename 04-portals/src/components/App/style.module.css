@@ -1,6 +1,5 @@
 .App {
-  min-width: 100vw;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   text-align: center;
   background-color: var(--greyLight);
 }
