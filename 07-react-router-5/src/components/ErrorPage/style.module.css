@@ -1,4 +1,4 @@
-.Tutorial {
+.ErrorPage {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -10,4 +10,8 @@
   border-radius: 2rem;
   text-align: center;
   line-height: 1;
+}
+
+.ErrorPage h1 {
+  color: red;
 }
