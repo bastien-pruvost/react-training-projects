@@ -1,0 +1,7 @@
+.AddTodoForm {
+  margin-top: 1.5rem;
+}
+
+.AddTodoForm > button {
+  margin-left: 1rem;
+}
