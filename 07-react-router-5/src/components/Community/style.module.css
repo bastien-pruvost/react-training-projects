@@ -1,0 +1,17 @@
+.Community {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  width: 70%;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: rgb(243, 244, 245);
+  border-radius: 2rem;
+  text-align: center;
+  line-height: 1;
+}
+
+.Community > h1 {
+  color: rgb(61, 63, 77);
+}
