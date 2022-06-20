@@ -1,5 +1,4 @@
-import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import styles from './style.module.css';
 
 const NavBar = () => {
@@ -16,6 +15,9 @@ const NavBar = () => {
       </NavLink>
       <NavLink exact activeClassName={styles.active} to='/community'>
         Community
+      </NavLink>
+      <NavLink exact activeClassName={styles.active} to='/users'>
+        Users
       </NavLink>
     </nav>
   );

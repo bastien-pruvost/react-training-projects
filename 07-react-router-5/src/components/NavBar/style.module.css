@@ -1,9 +1,8 @@
 .NavBar {
   position: relative;
   background-color: rgb(42, 54, 75);
-  height: 5rem;
   display: flex;
-  align-items: center;
+  /* align-items: stretch; */
   flex-wrap: wrap;
   padding: 1rem;
 }
