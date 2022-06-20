@@ -1,10 +1,12 @@
-import MyComponent from 'components/ChildrenComponent';
+import ClassState from 'components/ClassState';
+import FunctionState from 'components/FunctionState';
 
 function App() {
   return (
     <div className=''>
-      <h1>useState Hooks</h1>
-      <MyComponent />
+      <ClassState />
+      <hr />
+      <FunctionState />
     </div>
   );
 }
