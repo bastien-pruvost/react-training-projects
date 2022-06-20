@@ -5,18 +5,8 @@ class MyRef extends Component {
   constructor(props) {
     super(props);
 
-    this.state = {
-      value: ''
-    };
-
     this.myInput = React.createRef();
   }
-
-  updateState = (event) => {
-    this.setState({
-      value: event.target.value
-    });
-  };
 
   addFocus = () => {
     this.myInput.current.focus();
