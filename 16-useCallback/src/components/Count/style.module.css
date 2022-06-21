@@ -1,10 +1,25 @@
 .Count {
-  text-align: center;
-  display: flex;
-  justify-content: space-evenly;
+  width: 80%;
+  margin: 2rem auto;
+  padding: 2rem;
+  border: 2px solid rgb(223, 233, 236);
+  border-radius: 2rem;
 }
 
-.Count button {
-  margin: 1rem;
-  padding: 0.5rem;
+.Count__progress {
+  width: 60%;
+  margin: 1rem auto;
+  padding: 2px;
+  height: 2rem;
+  border: 1px solid grey;
+  border-radius: 0.8rem;
+  overflow: hidden;
+}
+
+.Count__progress__bar {
+  display: block;
+  height: 100%;
+  border-radius: 0.65rem;
+  background-color: rgb(61, 97, 61);
+  transition: 0.3s ease-in-out;
 }
