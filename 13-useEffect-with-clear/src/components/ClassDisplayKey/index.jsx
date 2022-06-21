@@ -11,7 +11,7 @@ export class ClassDisplayKey extends Component {
   }
 
   handleKeyCode = (e) => {
-    console.log(e);
+    console.log(e.code);
     this.setState({
       keyCode: e.code
     });

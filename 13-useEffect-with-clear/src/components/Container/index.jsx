@@ -1,4 +1,5 @@
 import ClassDisplayKey from 'components/ClassDisplayKey';
+import FunctionDisplayKey from 'components/FunctionDisplayKey';
 import { useState } from 'react';
 
 function Container() {
@@ -9,7 +10,8 @@ function Container() {
   return (
     <div>
       <button onClick={() => setShow(!show)}>{buttonText}</button>
-      {show && <ClassDisplayKey />}
+      {/* {show && <ClassDisplayKey />} */}
+      {show && <FunctionDisplayKey />}
     </div>
   );
 }
