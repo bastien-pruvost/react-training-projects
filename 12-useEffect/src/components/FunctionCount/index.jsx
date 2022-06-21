@@ -4,10 +4,10 @@ function FunctionCount() {
   const [count, setCount] = useState(0);
   const [name, setName] = useState('');
 
-  useEffect(() => {
-    console.log('Mise a jour du titre via useEffect');
-    document.title = `Vous avez cliqué ${count} fois`;
-  }, [count]);
+  // useEffect(() => {
+  //   console.log('Mise a jour du titre via useEffect');
+  //   document.title = `Vous avez cliqué ${count} fois`;
+  // }, []);
 
   return (
     <div>

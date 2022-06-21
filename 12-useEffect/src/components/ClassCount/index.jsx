@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 
 export class ClassCount extends Component {
   constructor(props) {
@@ -13,12 +13,13 @@ export class ClassCount extends Component {
   componentDidMount() {
     document.title = `Vous avez cliqué ${this.state.count} fois`;
   }
-  componentDidUpdate(prevProps, prevState) {
-    if (this.state.count !== prevState.count) {
-      console.log('Mise a jour du titre');
-      document.title = `Vous avez cliqué ${this.state.count} fois`;
-    }
-  }
+
+  // componentDidUpdate(prevProps, prevState) {
+  //   if (this.state.count !== prevState.count) {
+  //     console.log('Mise a jour du titre');
+  //     document.title = `Vous avez cliqué ${this.state.count} fois`;
+  //   }
+  // }
 
   render() {
     return (
