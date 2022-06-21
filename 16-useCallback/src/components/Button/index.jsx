@@ -1,3 +1,4 @@
+import { memo } from 'react';
 import style from './style.module.css';
 
 function Button({ handleClick, btnColor, increment, children }) {
@@ -14,4 +15,4 @@ function Button({ handleClick, btnColor, increment, children }) {
   );
 }
 
-export default Button;
+export default memo(Button);

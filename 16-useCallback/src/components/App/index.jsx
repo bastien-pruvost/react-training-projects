@@ -1,6 +1,6 @@
 import Count from 'components/Count';
 import Button from 'components/Button';
-import { Component, useState } from 'react';
+import { Component, useState, useCallback } from 'react';
 import styles from './style.module.css';
 
 const App = () => {
@@ -15,20 +15,31 @@ const App = () => {
     increment: 13
   });
 
-  const incrementCountOne = (val) => {
-    countOne.value + val < 100
-      ? setCountOne({ ...countOne, value: countOne.value + val })
-      : setCountOne({ ...countOne, value: 100 });
-  };
-  const incrementCountTwo = (val) => {
-    countTwo.value + val < 100
-      ? setCountTwo({ ...countTwo, value: countTwo.value + val })
-      : setCountTwo({ ...countTwo, value: 100 });
-  };
+  const incrementCountOne = useCallback(
+    (val) => {
+      countOne.value + val < 100
+        ? setCountOne({ ...countOne, value: countOne.value + val })
+        : setCountOne({ ...countOne, value: 100 });
+    },
+    [countOne]
+  );
+
+  const incrementCountTwo = useCallback(
+    (val) => {
+      countTwo.value + val < 100
+        ? setCountTwo({ ...countTwo, value: countTwo.value + val })
+        : setCountTwo({ ...countTwo, value: 100 });
+    },
+    [countTwo]
+  );
 
   return (
     <div className={styles.App}>
-      <Count count={countOne.value} bgColor={countOne.btnColor} />
+      <Count
+        text='Count One'
+        count={countOne.value}
+        bgColor={countOne.btnColor}
+      />
       <Button
         handleClick={incrementCountOne}
         btnColor={countOne.btnColor}
@@ -43,7 +54,11 @@ const App = () => {
         Reset Count 1
       </Button>
 
-      <Count count={countTwo.value} bgColor={countTwo.btnColor} />
+      <Count
+        text='Count Two'
+        count={countTwo.value}
+        bgColor={countTwo.btnColor}
+      />
       <Button
         handleClick={incrementCountTwo}
         btnColor={countTwo.btnColor}

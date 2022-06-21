@@ -1,6 +1,9 @@
+import { memo } from 'react';
 import style from './style.module.css';
 
-function Count({ count, bgColor }) {
+function Count({ text, count, bgColor }) {
+  console.log(text);
+
   const progressStyle = {
     width: `${count}%`,
     backgroundColor: `${bgColor}`,
@@ -20,4 +23,4 @@ function Count({ count, bgColor }) {
   );
 }
 
-export default Count;
+export default memo(Count);
