@@ -1,6 +1,6 @@
 import Count from 'components/Count';
 import Button from 'components/Button';
-import { Component, useState, useCallback } from 'react';
+import { useState, useCallback } from 'react';
 import styles from './style.module.css';
 
 const App = () => {
