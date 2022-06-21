@@ -16,3 +16,7 @@
 .Docs nav a {
   margin: 0 1rem;
 }
+.Docs nav a.active {
+  text-decoration: underline;
+  color: rgb(53, 71, 112);
+}
