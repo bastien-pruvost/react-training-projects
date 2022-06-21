@@ -9,15 +9,13 @@ class Profile extends Component {
   };
 
   componentDidMount() {
-    const profileId = this.props.match.params.profileId;
-
     let payload = {
       token: 'nqEliAeznAL7M6L0zBkH4A',
       data: {
         name: 'nameFirst',
         email: 'internetEmail',
         phone: 'phoneHome',
-        _repeat: 10
+        _repeat: 1
       }
     };
 
@@ -27,7 +25,7 @@ class Profile extends Component {
       data: payload
     }).then((resp) => {
       this.setState({
-        data: resp.data[profileId]
+        data: resp.data
       });
     });
   }
