@@ -1,12 +1,17 @@
 import styles from './style.module.css';
 import { useNavigate } from 'react-router-dom';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 const Tutorial = (props) => {
   const navigate = useNavigate();
+  const [underMaintenance, setUnderMaintenance] = useState({
+    Docs: false,
+    Tutorial: true,
+    Community: false
+  });
 
   const returnHome = setTimeout(() => {
-    navigate('/home');
+    !!underMaintenance && navigate('/home');
   }, 5000);
 
   useEffect(() => {

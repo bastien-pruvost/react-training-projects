@@ -15,18 +15,14 @@ const App = () => {
       <Routes>
         <Route path='/' element={<Navigate to='/home' />} />
         <Route path='/home' element={<h1>Accueil</h1>} />
-        <Route path='/docs' element={<Docs />} />
+        <Route path='/docs' element={<Docs />}>
+          <Route path='installation' element={<h1>Installation</h1>} />
+        </Route>
         <Route path='/tutorial' element={<Tutorial />} />
         <Route path='/community' element={<Community />} />
         <Route path='/users' element={<Users />} />
         <Route path='/users/:profileId' element={<Profile />} />
-        {/* <Route
-            path='/users/:profileId'
-            render={(props) => (
-              <Profile key={props.match.params.profileId} {...props} />
-            )}
-          /> */}
-        {/* <Route element={<ErrorPage />} /> */}
+        <Route path='*' element={<ErrorPage />} />
       </Routes>
     </div>
   );

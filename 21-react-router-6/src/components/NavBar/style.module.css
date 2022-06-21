@@ -1,17 +1,22 @@
 .NavBar {
   position: relative;
+  height: 5rem;
   background-color: rgb(42, 54, 75);
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   margin-bottom: 2rem;
-  padding: 1rem;
+  padding: 0 1rem;
 }
 
 .NavBar > a {
+  display: flex;
+  align-items: center;
   height: 100%;
-  margin: 1rem;
-  color: rgb(218, 218, 218);
+  margin: 0 1rem;
   text-align: center;
+  border-bottom: 3px solid transparent;
+  color: rgb(218, 218, 218);
 }
 
 .NavBar > a:hover {
@@ -23,6 +28,6 @@
 }
 
 .NavBar > a.active {
-  border-bottom: 4px solid rgb(123, 163, 214);
+  border-bottom: 3px solid rgb(135, 194, 233);
   color: white;
 }
