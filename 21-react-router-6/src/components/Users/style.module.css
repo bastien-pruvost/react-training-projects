@@ -1,0 +1,28 @@
+.Users {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  margin: 0 auto;
+  padding: 1rem;
+  background: rgb(243, 244, 245);
+  border-radius: 2rem;
+  text-align: center;
+  line-height: 1;
+}
+
+.Users > a {
+  margin-bottom: 0.5rem;
+  color: rgb(41, 45, 58);
+}
+
+.Users > a:hover {
+  margin-bottom: 0.5rem;
+  color: rgb(119, 126, 151);
+  text-decoration: underline;
+}
+
+.Users > a.active {
+  text-decoration: underline;
+}

@@ -1,0 +1,17 @@
+.Profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  margin: 0 auto;
+  padding: 1rem;
+  background: rgb(243, 244, 245);
+  border-radius: 2rem;
+  text-align: center;
+  line-height: 1;
+}
+
+.Profile > p {
+  font-size: 1.5rem;
+}
