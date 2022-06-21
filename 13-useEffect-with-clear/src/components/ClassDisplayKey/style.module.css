@@ -1,0 +1,8 @@
+.ClassDisplayKey {
+  width: 400px;
+  height: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border: 1px solid lightblue;
+  border-radius: 2rem;
+}
