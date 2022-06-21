@@ -1,0 +1,10 @@
+.Count {
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.Count button {
+  margin: 1rem;
+  padding: 0.5rem;
+}
