@@ -1,0 +1,24 @@
+.SearchUsers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  margin: 0 auto;
+  padding: 1rem;
+  background: rgb(243, 244, 245);
+  border-radius: 2rem;
+  text-align: center;
+  line-height: 1;
+}
+
+.SearchUsers > input {
+  height: 2rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.SearchUsers > ul > li {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+}

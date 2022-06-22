@@ -24,6 +24,9 @@ const NavBar = () => {
       <NavLink to='/users' className={navLinkClass}>
         Users
       </NavLink>
+      <NavLink to='/search' className={navLinkClass}>
+        Search Users
+      </NavLink>
     </nav>
   );
 };
