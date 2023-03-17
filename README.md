@@ -129,13 +129,6 @@ You can also simply [open an issue](https://github.com/bastien-pruvost/react-tra
 Don't forget to give the project a star! Thanks again!
 
 
-## Related
-
-Here are some related projects
-
-- [Other Project](https://github.com/matiassingers/awesome-readme)
-
-
 ## License
 
 Distributed under the [MIT License](https://choosealicense.com/licenses/mit/).
