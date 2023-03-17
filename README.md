@@ -8,7 +8,6 @@ react-training-projects
 
  -->
 
-
 # React Training Projects
 
 16 mini projects I made to practice on react.
